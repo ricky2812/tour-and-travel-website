@@ -1,0 +1,297 @@
+<!doctype HTML>
+<!doctype HTML>
+<html>
+    <link href="style.css" rel="stylesheet" />
+    <head>
+        <title>Winter 1
+    </title><meta name="viewport" content="width=device-width, initial-scale=1, maximaum-scale=1" /><link href="assets/css/main.css" rel="stylesheet" /><link href="tth-treks-css-js/css/style.css" rel="stylesheet" /><link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" /><link rel="stylesheet" href="assets/css/normalize.css" type="text/css" /><link rel="icon" type="image/x-icon" href="assets/favicon.ico" /><link href="assets/css/font-awesome-animation.min.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+
+        function GetClock() {
+            // create Date object for current location
+            var d = new Date();
+
+                // convert to msec
+                // add local time zone offset
+                // get UTC time in msec
+                utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+
+                // create new Date object for different city
+                // using supplied offset
+                nd = new Date(utc + (3600000 * '+5.5'));
+
+                // removing dates from time
+                var nhour = nd.getHours(), nmin = nd.getMinutes(), nsec = nd.getSeconds(), ap;
+
+                if (nhour == 0) { ap = " AM"; nhour = 12; }
+                else if (nhour < 12) { ap = " AM"; }
+                else if (nhour == 12) { ap = " PM"; }
+                else if (nhour > 12) { ap = " PM"; nhour -= 12; }
+
+                if (nhour <= 9) nhour = "0" + nhour;
+
+                if (nmin <= 9) nmin = "0" + nmin;
+                if (nsec <= 9) nsec = "0" + nsec;
+
+                document.getElementById('clockboxTime').innerHTML = "" + nhour + ":" + nmin + ":" + nsec + ap + " IST";
+
+                var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                var dayofweek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+                document.getElementById('clockboxDay').innerHTML = d.getDate() + "&nbsp;" + monthNames[d.getMonth()] + ",&nbsp;" + dayofweek[d.getDay()];
+            }
+
+            window.onload = function () {
+                GetClock();
+                setInterval(GetClock, 1000);
+            }
+
+    </script>
+    </head>
+    <body>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 datebox">
+            <div class="row date_mrg">
+            <div class="col-md-4 time-date">
+            <p id="clockboxTime"></p>
+            <p id="clockboxDay"></p>
+            </div>
+            <div class="col-md-6 contact_no">
+            <p>+91 135-2442627</p>
+            <p>+91 991 772 4737</p>
+            </div>
+            </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar" style="padding-right: 0 !important; padding-left: 0 !important">
+            <ul class="nav navbar-nav nav-stacked">
+            <li><a href="#overview" class="active anchor-scroll" title="Overview - Chopta Chandrashila Deoria Tal Trek">Overview</a></li>
+            <li><a href="#brief" class="anchor-scroll" title="Brief Itinerary - Chopta Chandrashila Deoria Tal Trek">Brief Itinerary</a></li>
+            <li><a href="#detailed" class="anchor-scroll" title="Detailed Itinerary - Chopta Chandrashila Deoria Tal Trek">Detailed Itinerary</a></li>
+            <li><a href="#costterm" class="anchor-scroll" title="Cost Terms - Chopta Chandrashila Deoria Tal Trek">Cost Terms</a></li>
+            <li><a href="#Map" class="anchor-scroll" title="Map - Chopta Chandrashila Deoria Tal Trek">Map</a></li>
+            
+            <li><a href="/booking/?Trek=Chopta+Chandrashila+Trek" class="anchor-scroll" target="_blank">Book Now</a></li>
+            <li><a href="#treks" class="anchor-scroll" title="Similer Treks - Chopta Chandrashila Deoria Tal Trek">Similer Treks</a></li>
+
+            </ul>
+            </div>
+
+            <button type="button" id="overview-btn" onclick="mobilePanel();" class="btn maincontactbutton visible-sm visible-xs">Overview
+                <span><i class="fa fa-chevron-down"></i></span></button>
+                <div id="overview" class="toppadding_main_text">
+                <h2>Overview</h2>
+                <p>
+                <ul>
+                <li>
+                Region :- West Bengal
+                </li>
+                <li> Duration :- 6 Days
+                </li>
+                <li> Grade :- Moderate</li>
+                <li>
+                Max Altitude :- 12,000 Ft.
+                </li>
+                <li> Approx Trekking Km :- 46 Kms.</li>
+                </ul>
+                 <br />
+                </p>
+                <br />
+                <p> <strong>Sandakphu</strong> throws open an incredible panorama of world’s highest snowline, swerving from the snow ensconced peaks of Nepal to Bhutan and farther east to Tibet. The trek route zigzags along the Singalila Ridge and moves this side and that of the Indo-Nepal border, switch backing and switch-bordering towards a enchanting visually charged summit that makes it all worth it. </p>
+                <p>The charming wilderness and wildlife expected of a <strong>Himalayan Trek</strong> is met as we pass through Singalila National Park, making the hike also one of keen naturalist interests. There are innumerable intriguing bird life, animals, and flora that you would be fascinated to explore in the diversity along this trek route’s sub-alpine and temperate coniferous, broadleaf, and subtropical coniferous forest biomes. </p>
+                <p>The route is not really out of civilization’s way. Lined with quaint localities inhabited even through long winters and their economy depending largely upon the <strong>Sandakphu Phalut Trek</strong> and tourism which run round the year, the route is logical, realistic, and “safe” in many regards. Sandakphu-Phalut trek is also one of those few high-altitude Himalayan treks which are provided through and through with comfortable teahouse accommodation. </p><br />
+                <p><strong>Highlights-</strong><br /><br />
+                <strong>A Mesmeric High Peak Panorama</strong><br /><br />
+                What stand Sandakphu out as a journey are many things—the replete hairpin bend ridden Old Silk Road route to the base camp, the impeccable hospitality of the people of Sikkim and Nepal along the way at the teahouses, the charming green haven of Singalila, and the theatre of the clouds. But it’s the absolutely mesmeric peak view that brings a climax so superb!<br />
+                The greatest of the greats unravel and shine their glory beams on this Everest view trek as the sun comes up every day and we are moving inches closer to the top-<br />
+                <li>Makalu- one of the eight-thousanders of the world and the fifth highest stands at 27, 838 ft., visible in the Everest range of peaks along the horizon from Sandakphu summit on a clear day. </li>
+                <li>Lhotse- Meaning the “south peak” in Tibetan is part and parcel of the Everest massif and forms one of the most marked climbing routes of the world’s highest summit through Everest’s South Col. Lhotse is also the fourth highest peak, toweringly present from the vantage point of Sandakphu. </li>
+                <li>Everest- The world’s highest peak towers over the above two. A pair of powerful binoculars will bring the Lhotse Face zone of the Everest climbing route closer, where it joins with South Col, when looking on from Sandakphu. The view from Phalut trekking in India, extending further from Sandakphu will bring this glorious ice capped tower even closer.</li> </p><br />
+                <p><strong>The Ultimate Vision of Kangchenjunga</strong> <br /><br />
+                The Kanchenjunga family of peaks had to come as a different pointer. The sunlight streaming upon this ice ensconced conglomerate becomes a vision to behold from early on, on this trek. Looking out of your Tumling teahouse at dawn reveals the “Sleeping Buddha” structure of the Kanchenjunga in its relentless glory, and comes to get bigger and sharper as we approach summit. <br />
+                Gold and amber spreading through the crystal vision of Kanchenjunga up close at sunrise and sunset on this prized trek in West Bengal, makes moments you should reserve for your most prized photo-ops. </p><br />
+                <p><strong>Rhododendron and Magnolia Spring</strong><br /><br />
+                Spring comes in these mountains in plenitude of colours. Cottony white Magnolias and pink-red rhododendrons sweep the slopes with the spirit of summer mirth. There is a festive feel to the days of Singalila forest walks on this trek in the north east at the height of spring that you must look out for.<br />
+                The Elusive Red Panda<br />
+                The Singalila National Park is the natural home to red pandas. These charming but elusive creatures move inside the jungles hopping in the trees and you just might get lucky enough to catch one in your photo frame!</p><br />
+                <p><strong>Kalipokhri- The Black Lake</strong><br /><br />
+                On Day 3, we will reach the Kalipokhri settlement build around the small lake of Kalipokhri. Literally meaning black water, this little waterhole makes for a quiet, contemplative, and picturesque site cradled amidst the gorgeous mountainous terrain with the Kanchenjunga beckoning in the distance. This area is well within the Nepal border and shows the signs of the ethno-religious Buddhist community of Nepal living in the Kalipokhri settlement. Prayer flags strung around the lake flutter in the wind as the sun starts to dip behind ice peaks soon after we reach the site on Day 3.<br /><br />
+                Sandakphu happens to be a mixed terrain trek with no abrupt height gain and mostly swinging through a tree cover, therefore remaining clear of the risks of Altitude Sickness. However, the sheer distance can be challenging and one must prepare for lasting stamina to make this trek a success. </p>
+                </div>
+                
+
+            <<button type="button" id="brief-btn" onclick="mobilePanel();" class="btn maincontactbutton visible-sm visible-xs">Brief Itinerary
+                <span><i class="fa fa-chevron-down"></i></span></button>
+                <div id="brief" class="toppadding_main_text">
+                <h2>Brief Itinerary</h2>
+                <p>
+                <p><strong>Day 01- NJP/ Bagdogra to Kopidana </strong></p>
+                <li>Altitude – 6,400 ft.</li>
+                <li>Distance – 84 KM (By Drive) (5 hrs. Drive)</li>
+                <li>Accommodation in Tea house</li>
+                <li>Pick up time 12:30 PM at parking of NJP railway station/Bagdogra airport</li>
+                <p><strong>Day 02- Kopidana to Tumling</strong></p>
+                <li>Trek Distance – 11 km (5-6 hours)</li>
+                <li>6,400 to 9,700 ft.</li>
+                <li>Hot lunch on the way</li>
+                <li>Accommodation in Tea house</li>
+                <p><strong>Day 03- Tumling to Kalapokhri </strong></p>
+                <li>Trek Distance – 14 km (6-7 hours)</li>
+                <li>9700 to 10400 ft</li>
+                <li>Hot lunch on the way</li>
+                <li>Accommodation in Tea house</li>
+                <p><strong>Day 04- Kalapokhri to Sandakphu </strong></p>
+                <li>Trek Distance – 6 km (3-4 hours)</li>
+                <li>10400 to 11929 ft</li>
+                <li>Hot lunch at Sandakphu</li>
+                <li>Accommodation in Tea house</li>
+                <p><strong>Day 05- Sandakphu to Sepi</strong></p>
+                <li>Trek Distance – 15 km (6-7 hours)</li>
+                <li>10400 to 6230 ft</li>
+                <li>Hot lunch on the way</li>
+                <li>Accommodation in Tea house</li>
+                <p><strong>Day 06 – Sepi to NJP / Bagdogra</strong></p>
+                <li>Distance – 140 KM (By Drive) (5 hrs. Drive)</li>
+                <li>you’ll reach NJP between 1:00 pm and 2:00 pm.</li>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p><strong>Who can go</strong></p>
+                <li>Anyone above the age of 12 with sporting abilities</li>
+                <li>First timer can apply, should have some interest in trekking and mountaineering</li>
+                <li>The climber must be fit and have sufficient stamina to cover 5 km of distance in 45 minutes without a stress</li>
+                <li>The climber should be able to carry a 10 kg backpack</li>
+                <li>Heart problem, high blood pressure, asthma, and epilepsy cannot be reconciled on this mission. The climber must not have the conditions mentioned above</li>
+                </p>
+                </div>
+                 
+
+                <button type="button" id="detailed-btn" class="btn maincontactbutton visible-sm visible-xs">Detailed Itinerary
+                    <span><i class="fa fa-chevron-down"></i></span></button>
+                    <div id="detailed" class="toppadding_main_text">
+                    <h2>Detailed Itinerary </h2>
+                    <p><p><strong>Day 01- NJP/ Bagdogra to Kopidana</strong></p>
+                    <p>Today we will pick you up from Bagdogra Airport or NJP railway station and cover an uphill road of 84 km to Kopidana, our base camp at 6,400 ft. This is going to be a 5 km drive and breakfast and lunch will be outside the TTH trek package. </p><br />
+                    <p><strong>Day 02- Kopidana to Tumling</strong></p>
+                    <p>We start off from Kopidana, a lesser used but beautiful basecamp village for treks in West Bengal. We begin early morning after breakfast on this 5-6 hour trek covering mixed ascents. Hot lunch will be provided on the way.
+                    Tumling is where the border between trekking in Nepal and India blurs and we are suddenly ushered into another country after crossing a check-post where you must keep your visa and IDs handy. There are hardly ever any restrictions for entering the place whether you are an Indian or a foreigner with Indian visa. From other access points to Tumling, it is even more of a freeway. The tiny hamlet of Tumling is located at an altitude of 9, 600 ft., within motor road access from Manebhanjam and Jaubhari—the other points of ascent on the Sandakphu-Phalut trail besides Kopidana. </p>
+                    <p>There are about 10-12 Nepali families living in this mountain parish who run teahouse accommodations for the trekkers all year long. In addition, you will find quite a few private lodges and huts adding to services available in the area for tourists and trekkers. </p>
+                    <p>Since we start really early in the morn, lets expect to reach the warm hospitality waiting for us in Tumling by late afternoon around 5 while there is still plenty of light. Later, you can go over to the viewpoint at the center of Tumling from where the superb view of Kanchenjunga family of snow peaks meets the eye. The sunset at Tumling this afternoon is going to be your first of many awe-inspiring sunsets to come on this journey. </p>
+                    <p>From the center you are also going to find a signboard indicating towards the expanse of Singalila National Park starting right ahead, and on this way you will find the entry to park in about 1 km from Tumling. At another side you will find a high trail zigzagging towards Tonglu, another altitudinous mountain settlement.
+                    <p>If you love Himalayan trekking in the winters you will find the well-demarcated trails used after the snowmelt season for trekking to Sandakphu-Phalut, now overwhelmingly covered. </p><br />
+                    <p><strong>Day 03- Tumling to Kalapokhri </strong></p>
+                    <p>Another beautiful sunrise to look forward to on the Sanndakphu Phalut Trek comes on the morning of our 3rd day, waking up in Tumling. The magnificent Sleeping Buddha washed in the first rays of the sun gleams sublime across the sky. The entire set of Kanchenjunga peaks unveils if the sky is clear and the vision starts your day in the right mood. Look out for the prominent three in the background—the Kanchenjunga main flanked on two sides by the Kumbhakarna and Shimbho peaks. In the fore, you can make out the peaks of Goecha, the Kabru set of peaks, Rathong, Koktang, and Frey. You can also trace the hollow of Goecha La somewhere along the frontline peaks— one other of our popular treks, located in Sikkim.</p>
+                    <p>We start our journey towards Kalipokhri today through the charming forests of Singalila Natioanl Park. An interior Nepal-bound motor road runs close to our hiking trail that we often catch glimpses of. The forests are famed for its rapturous summer colors when the rhododendrons and magnolias come in full bloom. We move through the thickets to our first stop at Gairibasa- a tiny settlement consisting of a few hotels and rest homes, and falling under the Nepal side of the border. Here we will come to an Entry check Post again and need to produce an entry fee to access the trek. The Gairibasa check post settlement is a good place to take a tea-break and ensure some rest for the legs before embarking on another 2 km trek to the next settlement at Kaiyakatta. Also because, a steeper climb is coming!</p>
+                    <p>Going a little beyond Gairibasa, on the Kaiyakatta way, we will find steps cut into the elevation, easing out the ascent for the trekkers. At one side we also find the motor road twisting its way across closer to the Nepal side. An hour into our ascent from Gairibasa, we will reach Kaiyakatta, in time for a hot lunch at the settlement’s Nepali enclaves. </p>
+                    <p>Kalipokhri- our final stop or the day is another 4 km from Kaiyakatta. The trail gets greener and more scenic. This stretch is also home to many bird species and a site attracting migratory fledglings. Within a two hour trek on this route you will come across a black water lake nestling near to a settlement, surrounded with prayer flags fluttering in the wind and a t one side a small Buddhist temple.Your teahouse is just a short walk from this point.</p><br />
+                    <p><strong>Day 04- Kalipokhri to Sandakphu </strong></p>
+                    <p>The trail from Kalipokhri to Sandakphu should be an easy trek for those sufficiently fit. The trail goes on an initial gradual ascent covering the forst 30 minutes, followed by a steeper climb for about an hour, and after that falling on a winding motor road. It’s going to be a 3 hour jaunt covering about 6 km.</p>
+                    <p>Reaching the flats of Bikheybhanjang, you will be looking at the vast panorama of the Sandakphu summit ahead of you. From this point, it’s another 4 km up a zigzagging route. </p>
+                    <p>After an hour’s climb, you can make out teahouses and huts marking the horizons of Sandakphu. Soon, we will be closing in on the summit point from where a 180 degree sweeping panorama of the tallest Himalayan peaks open up before us. On a clear day, the glitterati of ice-peaks shows Makalu, Lhotse, Everest, Nuptse, Baruntse, Chamling, Chomolonzo, Machapucchare, extending to the Annapurna family of peaks broadening out to the West. The vision of Sleeping Buddha which stayed with you on and off through the trek now lies in prominence before you, and to further North, you can make out the Three Sisters peaks.</p>
+                    <p>Our camp lies a little down from the summit near a small water point.</p><br />
+                    <p><strong>Day 05- Sandakphu to Sepi</strong></p>
+                    <p>After viewing a soul-stirring sunrise over the magnificent peak panorama, one of the best found on trekking in India, we get ready for our descent to village Sepi located in West Bengal. This is going to be our longest trek in the whole journey but the descent will make it less exhausting.</p>
+                    <p>Our trail will pass through a different kind of forest today, that of bamboos where it’s the natural habitat of Red Pandas and Bears. A winding forest trail will take us to Gurdum at mid noon where we will be served hot lunch. Here you can try ordering a drink of the exotic rhododendron blossoms that’s full of medicinal benefits and makes for a good dessert. </p>
+                    <p>The next village we will be crossing is Timburay—a settlement of a few houses and tea shops. Here, we will come across the beautiful Sri River known in the local tongue as Sri Khola, khola meaning river. </p>
+                    <p>After crossing a wooden bridge over the stream, we will reach the village of Sepi in the afternoon. </p><br />
+                    <p><strong>Day 06 – Sepi to NJP / Bagdogra</strong></p>
+                    <p>After spending a night of rest in the scenic idyll of Sepi, we get on board this morning, driving towards NJP. Scheduled time for arriving at NJP station is approx 2 pm, so you can safely book a night train/flight home on the 6th day, qualifying Sandakphu for a nice long weekend trek. </p></p>
+                    </div>
+                    
+                    <button type="button" id="howtoreach-btn" class="btn maincontactbutton visible-sm visible-xs">How to Reach
+                    <span><i class="fa fa-chevron-down"></i></span></button>
+                    <div id="howtoreach" class="toppadding_main_text">
+                    <h2>How to Reach</h2>
+                    <p><p><strong>By Train :- </strong></p>
+                    New Jalpaiguri or NJP is a major railway station located in south west of sikkim. There are many long distance trains arrives or pass through the NJP station. You can choose to come to Kolkata and take one of the many trains to NJP. If you are coming from Delhi or north part of India, try to take any north east train which directly goes to NJP by passing Kolkata.
+                    <p><strong>By Flight:- </strong></p>
+                    Flying to Bagdogra is another option that you can choose though flights to Bagdogra tend to be pricier than those to Kolkata. Most of the flight foremost metros in the country come here.<br /><br />
+                    TTH’s Tata Sumo or similar vehicles will pick-up you from NJP Railway Station at 01:00pm.<br />
+                    Pick-up is included in the cost of the trek<br />
+                    You will reach Kopidana by 6:00 pm<br />
+                    </p>
+                    </div>
+                    <button type="button" id="costterm-btn" class="btn maincontactbutton visible-sm visible-xs">Cost Terms
+                        <span><i class="fa fa-chevron-down"></i></span></button>
+                        <div id="costterm" class="toppadding_main_text">
+                        <h2>Cost Terms</h2>
+                        <p><p><strong>Inclusions: - </strong></p>
+                        1. Accommodation – Day 1 to Day 5 Stay in Tea house<br />
+                        2. Meals while on trek (Veg.) - Dinner at Kopidana on Day 1 to Breakfast at Sepi on Day 6<br />
+                        3. Crampon (if required) – As per the snow condition<br />
+                        4. All necessary permits and entry fees and forest fees<br />
+                        5. First aid, medical kit and oxygen cylinder<br />
+                        6. Mountaineering qualified & professional trek Leader, guides, cook and Support staff<br />
+                        7. Transport NNJP / Bagdogra to Kopidana and Sepi to NJP / Bagdogra<br /><br /><br />
+                        <p><strong>Exclusions</strong></p>
+                        1. Any kind of personal expenses<br />
+                        2. Food during the transit<br />
+                        3. Insurance<br />
+                        4. Any kind of emergency evacuation charges<br />
+                        5. Mules or porter to carry personal backpack<br />
+                        6. Anything not specifically mentioned under the head<br />
+                        <p><strong>Note :</strong></p>
+                        Normally TTH expect to carry your personal luggage on your own, if you wish to offload your backpack, you can give it to Mule.<br />
+                        Charges of offloading backpack:-<br />
+                        INR 1400/- if you make an online payment, 10 days in advance<br />
+                        INR 1600/- if you inform us after reaching Kopidana <br />
+                        The backpack cannot weigh more than 11 kgs. Backpack should have waterproof cover. Suitcases/strolleys/ bags will not be allowed.
+                        Paying the Trek/ Adventure activity fee: <br /><br />
+                        The fee can be paid by online transfer/check deposit/ demand draft. Instruction for payment will be forwarded along with your confirmation email. When your transfer is done, please e-mail us a confirmation mail with your transfer details, so that we can follow up your reservation efficiently.<br />
+                        <p>
+                        <strong>Paying the Trek /Tour fee:</strong><br />
+                        The fee can be paid by online transfer/Check deposit/Cash deposit/Demand draft. Instruction for<br />
+                        payment will be forwarded along with your confirmation email. When your transfer is done, please <br />
+                        e-mail us a confirmation mail with your transfer details, so that we can follow up your reservation efficiently.<br />
+                        </p><br />
+                        <p>
+                        <strong>Cancellation terms:</strong><br />
+                        For the cancellation of services due to any avoidable/unavoidable reasons, Trek The Himalayas must <br />
+                        be notified of the same in writing at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b0d9ded6dff0c4c2d5dbc4d8d5d8d9ddd1dcd1c9d1c39ed3dfdd9e">[email&#160;protected]</a> At the time we receive your <br />
+                        written cancellation, refunds based on the total fare are as follows.<br />
+                        </p><br />
+                        <h2>Cancellation Policy</h2>
+                        <p><b>Cancellations prior to 07 days from the start of the Trek:</b> Get a full refund (minus 5% trek cost). The money will be transferred to the same bank account from where the transaction was made.</p>
+                        <p><b>Cancellations prior to 06 days from the start of the Trek:</b> 100% full refund of trek cost in form of Trek The Himalayas trek voucher valid for 1 year from date of issue. This voucher is applicable for Indian treks only.</p>
+                        <p><b>Cancellation on Start of Trek date:</b>Get 20% refund of trek cost in form of Trek The Himalayas trek voucher valid for 1 year from date of issue. This voucher is applicable for Indian treks only.</p>
+                        <p><strong>Note:</strong>
+                        1.	Change of trek batch is dependent on the availability of seats in the batch<br />
+                        2.	In case of transferring a trek to a friend, he/she should satisfy all the mandatory requirements put forward by TTH<br />
+                        3.	TTH holds the right to change/cancel the policies, without prior notice<br />
+                        4.	Cash refund is applicable only in case of bookings made without using any promotional offer code or vouchers<br />
+                        </p><br />
+                        <p><strong>Cash Voucher Terms:</strong></p>
+                        <p>
+                        • This is a non transferable voucher <br />
+                        •	The voucher cannot be merged with any other offer of Trek The Himalayas<br />
+                        •	The voucher is valid for Trek booked directly with Trek The Himalayas in India<br />
+                        •	To avail the voucher please use your register phone number or e-mail id<br />
+                        •	All the other Terms of booking a trek with Trek The Himalayas are applicable to the voucher<br />
+                        •	Trek The Himalayas holds rights to add/remove any of the Terms and Conditions without prior notice<br />
+                        </p> <br /><br />
+                        <p>Itineraries are based on information available at the time of planning and are subject to change.
+                        "Trek The Himalayas" reserves the right to change expedition dates, people or itineraries as
+                        conditions warrant. If a trip must be delayed or the itinerary changed due to bad weather, road
+                        conditions, transportation delays, government intervention, airline schedules, sickness, or other
+                        contingency for which TTH or its agents cannot make provision, the cost of delays and/or other
+                        changes are the responsibility of the participant. TTH reserves the right to decline, or accept, any
+                        individual as a trip member for any reason whatsoever.</p><br />
+                        </div>
+            <h2>Map</h2>
+            <h3>coming</h3>
+            <!-- <div id="Map" class="toppadding_main_text">
+                        <a class="fancybox" href="map_1.jpg" title="Himalays Kit Checklist">
+                            <center><img src="map_1.jpg" alt="" class="img-responsive" height="400" width="700" /></a></center>
+            </div>
+                        
+            <div id="treks" class="toppadding_main_text">
+                            <h2>Similer Treks</h2>
+                            <center>
+                                <img src="images.jpg" alt="Image" height="300px" width="400px">
+                                <img src="images.jpg" alt="Image" height="300px" width="400px">
+                                <img src="images.jpg" alt="Image" height="300px" width="400px">
+                                </center> -->
+            <!-- </div>
+                             -->
+        </div>
+    </body>
+</html>
